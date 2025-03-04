@@ -4,11 +4,16 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import Navbar from './components/header/Header'
 import { BrowserRouter as Router , Route , Routes } from 'react-router-dom'
-import About from './pages/what-we-offer/WhatWeOffer'
-import Home from './pages/Home/Home'
+
+import Home from './pages/mainPages/Home.jsx'
 import WhatWeOffer from './pages/what-we-offer/WhatWeOffer'
 import WoodWeWorkWith from './pages/wood-we-work-with/WoodWeWorkWith'
-import Contacts from './pages/Contact/Contacts'
+import ContactPage from './pages/mainPages/Contact.jsx'
+import Question from './pages/Question/Question'
+import Gallery from './pages/mainPages/Gallery.jsx'
+import Footer from './components/footer/Footer.jsx'
+import About from './pages/mainPages/About.jsx'
+import Price from './pages/mainPages/Price.jsx'
 
 
 
@@ -17,13 +22,17 @@ function App() {
 
   return (
     <Router >
-      <Navbar/>
+      {/* <Navbar/> */}
       <Routes>
-        <Route path="/" element={<WhatWeOffer />} />
+        <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/wood-we-work-with" element={<WoodWeWorkWith/>}/>
-        <Route path="/contacts" element={<Contacts/>}/>
+        <Route path="/contact" element={<ContactPage/>}/>
+        <Route path="/question" element={<Question/>}/>
+        <Route path="/gallery" element={<Gallery />} />
+        <Route path="price" element={<Price/>}/>
       </Routes>
+      <Footer/>
     </Router>
     
   )

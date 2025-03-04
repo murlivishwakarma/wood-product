@@ -1,65 +1,53 @@
 import React from "react";
-import log from "../../assets/image-4.png";
+import { FaPhoneAlt, FaMapMarkerAlt } from "react-icons/fa";
+import vectorImage from "../../assets/Vector 30.png";
+import topo from "../../assets/topo.svg";
+import topo1 from "../../assets/topo (2).svg";
+export default function Contact() {
+  return (
+    <div
+      className="bg-contain bg-[#211f21] flex justify-center items-center bg-repeat min-h-screen text-white"
+      style={{ backgroundImage: `url(${topo1})` }}
+    >
+      {/* Navbar */}
 
-// bg-[#1a1a1a] bg-gradient-to-b from-[rgba(30,30,30,0.7)] via-transparent bg-[length:100%_8px]
-const Contacts = () => {
-return (
-    <div className="min-h-screen flex items-center justify-center p-4 pt-20 bg-[#211f21]">
-        <div className="container max-w-6xl mx-auto">
-            <div className="flex flex-col md:flex-row gap-8 items-center">
-                <div className="w-full md:w-1/2">
-                   
-                <h1 className="font-['KyivType'] text-white text-4xl md:text-5xl lg:text-6xl font-bold mb-8 text-left md:text-left">
-                        ANY QUESTIONS?
-                    </h1>
-
-                    <form className="space-y-4">
-                        <div>
-                            <input
-                                type="text"
-                                placeholder="Your name"
-                                className="bg-transparent border border-[rgba(100,130,170,0.5)] rounded-full text-white py-3 px-6 w-full"
-                            />
-                        </div>
-                        <div>
-                            <input
-                                type="tel"
-                                placeholder="Your telephone number"
-                                className="bg-transparent border border-[rgba(100,130,170,0.5)] rounded-full text-white py-3 px-6 w-full"
-                            />
-                        </div>
-                        <div>
-                            <textarea
-                                placeholder="Your question"
-                                className="bg-transparent border border-[rgba(100,130,170,0.5)] rounded-3xl text-white py-3 px-6 w-full h-32"
-                            ></textarea>
-                        </div>
-                        <div>
-                            <button type="submit" className="bg-[rgba(100,130,170,0.7)] hover:bg-[rgba(100,130,170,0.9)] text-white rounded-full py-2 px-8 transition-colors">
-                                Send
-                            </button>
-                        </div>
-                    </form>
-                </div>
-
-                <div className="w-full md:w-1/2 text-white">
-                    <p className="text-lg mb-8">
-                        Write to us and we will be sure to answer all your questions and
-                        give you a comprehensive consultation.
-                    </p>
-
-                    <div className="relative ">
-                        <img
-                            src={log}
-                            alt="Wood cross-section"
-                            className="w-[50%] ml-auto opacity-80"
-                        />
-                    </div>
-                </div>
+      {/* Contact Section */}
+      <div className="container mx-auto px-6 py-12 text-white">
+        {/* Contact Info and Google Map */}
+        <div className="flex flex-col md:flex-row items-center md:items-start justify-between">
+          {/* Contact Information */}
+          <div className="flex flex-col space-y-4 w-full md:w-1/2 md:pr-8 items-center md:items-start">
+            <h2 className="text-5xl font-bold text-center md:text-left">
+              CONTACT
+            </h2>
+            <br />
+            <br />
+            <div className="flex items-center space-x-3">
+              <FaPhoneAlt className="text-xl text-gray-400" />
+              <p className="text-lg">+420 000 000 000</p>
             </div>
-        </div>
-    </div>
-);
-};
+            <div className="flex items-center space-x-3">
+              <FaMapMarkerAlt className="text-xl text-gray-400" />
+              <p className="text-lg">XYZ 1166/0, 150 00</p>
+            </div>
+          </div>
 
-export default Contacts;
+          {/* Google Map Section */}
+          <div className="mt-8 md:mt-0 w-full md:w-1/2 flex justify-center">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2834.2568504039596!2d-93.09550531107715!3d44.73477639648124!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87f7cca9cec484e3%3A0x3100a2469dbb09a9!2s1166%20150th%20St%20W%2C%20Rosemount%2C%20MN%2055068%2C%20USA!5e0!3m2!1sen!2sin!4v1741088599389!5m2!1sen!2sin"
+              width="100%"
+              // height="400"
+              height="400"
+              className="rounded-4xl z-40 shadow-lg aspect-square"
+              style={{ border: 0 }}
+              allowFullScreen=""
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}

@@ -6,7 +6,7 @@ const WoodWeWorkWith = () => {
     return (
         <div class="bg-[#211f21] bg-pattern min-h-screen flex items-center justify-center p-4">
     <div class="max-w-4xl mx-auto text-white">
-        <h1 class="text-5xl font-bold text-center mb-20">
+        <h1 class="text-5xl font-bold font-['KyivType'] text-left mb-20">
             THE WOOD WE<br/>WORK WITH
         </h1>
         
