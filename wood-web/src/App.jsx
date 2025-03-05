@@ -14,6 +14,7 @@ import Gallery from './pages/mainPages/Gallery.jsx'
 import Footer from './components/footer/Footer.jsx'
 import About from './pages/mainPages/About.jsx'
 import Price from './pages/mainPages/Price.jsx'
+import NotFoundPage from './pages/404/NotFoundPage.jsx'
 
 
 
@@ -30,7 +31,8 @@ function App() {
         <Route path="/contact" element={<ContactPage/>}/>
         <Route path="/question" element={<Question/>}/>
         <Route path="/gallery" element={<Gallery />} />
-        <Route path="price" element={<Price/>}/>
+        <Route path="/price" element={<Price/>}/>
+        <Route path="*" element={<NotFoundPage />} />
       </Routes>
       <Footer/>
     </Router>

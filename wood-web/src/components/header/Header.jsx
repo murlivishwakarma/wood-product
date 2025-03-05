@@ -17,8 +17,9 @@ return (
             <div 
                 className="flex items-center justify-between h-16  sm:h-18 md:h-30 bg-[#1d0c05] rounded-b-[50px] sm:rounded-b-[60px] md:rounded-b-[70px] px-6 sm:px-12 md:px-20 py-6 md:p-10 relative shadow-[0_5px_15px_rgba(255,255,255,0.2)]"
             >
+                <Link to="/" >
                 <img src={logo} className="w-24 sm:w-28 md:w-35" alt="Logo" />
-
+                </Link>
                 {/* Desktop Menu */}
                 <div className="hidden md:flex text-white space-x-4 lg:space-x-20 font-semibold">
                     <Link

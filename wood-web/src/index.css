@@ -1,1 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Fahkwang:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
 @import "tailwindcss";
+.fahkwang-extralight {
+    font-family: "Fahkwang", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+  }
+  
+  .fahkwang-light {
+    font-family: "Fahkwang", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .fahkwang-regular {
+    font-family: "Fahkwang", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .fahkwang-medium {
+    font-family: "Fahkwang", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  .fahkwang-semibold {
+    font-family: "Fahkwang", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+  }
+  
+  .fahkwang-bold {
+    font-family: "Fahkwang", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .fahkwang-extralight-italic {
+    font-family: "Fahkwang", sans-serif;
+    font-weight: 200;
+    font-style: italic;
+  }
+  
+  .fahkwang-light-italic {
+    font-family: "Fahkwang", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+  }
+  
+  .fahkwang-regular-italic {
+    font-family: "Fahkwang", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  .fahkwang-medium-italic {
+    font-family: "Fahkwang", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+  }
+  
+  .fahkwang-semibold-italic {
+    font-family: "Fahkwang", sans-serif;
+    font-weight: 600;
+    font-style: italic;
+  }
+  
+  .fahkwang-bold-italic {
+    font-family: "Fahkwang", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+  }
+  
