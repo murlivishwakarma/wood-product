@@ -11,7 +11,6 @@ const About = () => {
        <AboutUs/>
        <ImageSlider/>
        <Question/>
-       
        </>
     );
 };
